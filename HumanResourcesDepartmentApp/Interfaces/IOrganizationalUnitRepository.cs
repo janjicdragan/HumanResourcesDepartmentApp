@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HumanResourcesDepartmentApp.Interfaces
 {
-    interface IOrganizationalUnitRepository
+    public interface IOrganizationalUnitRepository
     {
         IEnumerable<OrganizationalUnit> ReadAll();
         OrganizationalUnit ReadById(int id);

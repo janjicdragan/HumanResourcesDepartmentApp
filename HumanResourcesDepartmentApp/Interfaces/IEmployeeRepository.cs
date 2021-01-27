@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HumanResourcesDepartmentApp.Interfaces
 {
-    interface IEmployeeRepository
+    public interface IEmployeeRepository
     {
         IEnumerable<Employee> ReadAll();
         Employee ReadById(int id);
