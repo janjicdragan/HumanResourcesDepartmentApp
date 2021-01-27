@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResourcesDepartmentApp", "HumanResourcesDepartmentApp\HumanResourcesDepartmentApp.csproj", "{76B201F8-2203-4F5A-96C9-F566F42F9BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResourcesDepartmentApp.Tests", "HumanResourcesDepartmentApp.Tests\HumanResourcesDepartmentApp.Tests.csproj", "{FE321860-E776-40F8-BC54-788B37547A92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B201F8-2203-4F5A-96C9-F566F42F9BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B201F8-2203-4F5A-96C9-F566F42F9BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B201F8-2203-4F5A-96C9-F566F42F9BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B201F8-2203-4F5A-96C9-F566F42F9BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE321860-E776-40F8-BC54-788B37547A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE321860-E776-40F8-BC54-788B37547A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE321860-E776-40F8-BC54-788B37547A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE321860-E776-40F8-BC54-788B37547A92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF4250F4-5429-4386-AFA2-275EEAAFDA30}
+	EndGlobalSection
+EndGlobal
