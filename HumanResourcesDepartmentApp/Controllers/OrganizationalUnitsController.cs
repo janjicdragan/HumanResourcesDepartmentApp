@@ -19,12 +19,14 @@ namespace HumanResourcesDepartmentApp.Controllers
             _repository = repository;
         }
 
+        //GET api/organizationalunits
         [ResponseType(typeof(IEnumerable<OrganizationalUnit>))]
         public IEnumerable<OrganizationalUnit> Get()
         {
             return _repository.ReadAll();
         }
 
+        //GET api/organizationalunits/1
         [ResponseType(typeof(OrganizationalUnit))]
         public IHttpActionResult Get(int id) {
 
@@ -37,8 +39,9 @@ namespace HumanResourcesDepartmentApp.Controllers
 
             return Ok(organizationalUnit);
 
-        } 
+        }
 
+        //GET api/tradition
         [Route("api/tradition")]
         [ResponseType(typeof(IEnumerable<OrganizationalUnit>))]
         public IEnumerable<OrganizationalUnit> GetTradition()
