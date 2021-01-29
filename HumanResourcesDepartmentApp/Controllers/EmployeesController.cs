@@ -7,10 +7,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 
 namespace HumanResourcesDepartmentApp.Controllers
 {
+  
     public class EmployeesController : ApiController
     {
         public IEmployeeRepository _repository { get; set; }
@@ -22,7 +24,6 @@ namespace HumanResourcesDepartmentApp.Controllers
 
 
         //GET api/employees
-        //[Authorize]
         [ResponseType(typeof(IEnumerable<Employee>))]
         public IEnumerable<Employee> Get()
         {
@@ -30,7 +31,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //GET api/employees/1
-        //[Authorize]
+        [Authorize]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult Get(int id)
         {
@@ -45,7 +46,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //POST api/employees
-        //[Authorize]
+        [Authorize]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult Post(Employee employee)
         {
@@ -60,7 +61,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //PUT api/employees/1
-        //[Authorize]
+        [Authorize]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult Put(int id, Employee employee)
         {
@@ -88,7 +89,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //DELETE api/employees/1
-        //[Authorize]
+        [Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult Delete(int id)
         {
@@ -113,7 +114,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //GET api/employees?birthYear=1
-        //[Authorize]
+        [Authorize]
         [ResponseType(typeof(IEnumerable<Employee>))]
         public IEnumerable<Employee> GetEmployeesByBirthYear(int birthYear)
         {
@@ -121,7 +122,7 @@ namespace HumanResourcesDepartmentApp.Controllers
         }
 
         //POST api/employeesfilter
-        //[Authorize]
+        [Authorize]
         [Route("api/employeesfilter")]
         [ResponseType(typeof(IEnumerable<Employee>))]
         public IEnumerable<Employee> PostFilterEmployeesBySalary(BetweenLimitsSalaryFilter filter)
