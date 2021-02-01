@@ -20,6 +20,7 @@ Follow these steps to get your development environment set up:
 1. Build solution in Visual Studio
 1. Start the application
 1. On the following link, you can find client side created in React.js library: [Client](https://github.com/janjicdragan/HumanResourcesDepartmentClient)
+1. To sign-up, your password has to contain at least 6 characters. It also must contain at least 1 uppercase letter, 1 lowercase letter, 1 digit and 1 special character.
 
 ## Technologies
 
